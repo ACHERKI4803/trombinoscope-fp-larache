@@ -1,0 +1,65 @@
+// ============================================================
+//  LISTE DES ÉTUDIANTS
+//  Une ligne = un étudiant :  ["NOM", "Prénom", "nom-de-la-photo"]
+//  - Pour AJOUTER : copie une ligne, colle-la, change les infos.
+//  - Pour SUPPRIMER : efface la ligne.
+//  - "nom-de-la-photo" = nom du fichier dans photos/ SANS extension
+//    (01 pour 01.jpg ou 01.png). Laisse "" s'il n'y a pas de photo.
+//  Le nombre d'étudiants affiché sur le site se met à jour tout seul.
+// ============================================================
+const STUDENTS = [
+  ["ABDELLAOUI", "Aya", "01"],
+  ["AHARCHICHE", "Adil", "02"],
+  ["AJAJ BAKIOUI", "Rachid", "03"],
+  ["AL JANATI", "Kawtar", "04"],
+  ["AL KOUR", "Hanan", "05"],
+  ["ALAHYANE", "Aya", "06"],
+  ["ALAMI TALBI", "Abdelmalek", "07"],
+  ["AMMARI", "Aya", "08"],
+  ["AZIRAR", "Yasyn", "09"],
+  ["BALAMHITOU", "Saloua", "10"],
+  ["BEN AZZOUZ", "Niema", "11"],
+  ["BEN ELFAKIH", "Omar", "12"],
+  ["BENAISSA", "Anas", "13"],
+  ["BENAMEUR", "El Mehdi", "14"],
+  ["BENCHAIKH", "Mohamed", "15"],
+  ["BENKHOUA", "Hassan", "16"],
+  ["BENNADI", "Israe", "17"],
+  ["BOUDAR", "Chaimaa", "18"],
+  ["BOUZIANE", "Meryam", "19"],
+  ["DEKKAKI", "Kaoutar", "20"],
+  ["EL AZZOUZI", "Hajar", "21"],
+  ["EL HACHMI", "Salima", "22"],
+  ["EL HARRAK", "Houda", "23"],
+  ["EL KHARBOUI", "Mohamed", "24"],
+  ["EL MANSOURI", "Farah", "25"],
+  ["ELABBADI", "Honaida", "26"],
+  ["ELHARTI", "Ouafae", "27"],
+  ["ESSAYAH", "Mohamed Amine", "28"],
+  ["EZZALMATI", "Bouchra", "29"],
+  ["FATRI", "Marwa", "30"],
+  ["FETHI", "Houda", "31"],
+  ["GHARBI", "Yousra", "32"],
+  ["GUERNAOUI", "Douae", "33"],
+  ["HADDADI", "Omar", "34"],
+  ["HAJJAR", "Maroua", "35"],
+  ["HAJJI", "Jallal", "36"],
+  ["HMAMA", "Zouheir", "37"],
+  ["IDENDEL", "Ismail", "38"],
+  ["JLALA", "Hanae", "39"],
+  ["KADDOURI", "Aya", "40"],
+  ["KADDOURI", "Mohammed", "41"],
+  ["KHTATBI", "Douae", "42"],
+  ["KRIRDOU", "Aicha", "43"],
+  ["MAZOUZ", "Oualid", "44"],
+  ["NADI", "Mehdi", "45"],
+  ["OUALIJI", "Wiam", "46"],
+  ["RAHIM", "Ghizlane", "47"],
+  ["RAHMANI", "Oussama", "48"],
+  ["SOUHMI", "Mohamed", "49"],
+  ["TARFI", "Fatima Zahrae", "50"],
+  ["TIFRITE", "Fatiha", "51"],
+  ["YAMNI", "Noura", "52"],
+  ["ZEKRI", "Imrane", "53"],
+  ["ZERKAN", "Hanae", "54"]
+];

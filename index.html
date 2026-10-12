@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trombinoscope</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="head">
+  <div class="head-in">
+    <div>
+      
+
+<div class="school-info">
+    <span class="school-name">FP-LARACHE</span>
+
+    <p class="kicker">
+        Master d'Excellence | Finance Approfondie et Intelligence Financière
+    </p>
+
+    <h1>Trombinoscope</h1>
+</div>
+
+    </div>
+    <div class="header-right">
+
+    <div class="counter" aria-live="polite">
+        <svg class="cap-icon" xmlns="http://www.w3.org/2000/svg"
+             viewBox="0 0 24 24" fill="none"
+             stroke="currentColor" stroke-width="1.8"
+             stroke-linecap="round" stroke-linejoin="round">
+            <path d="m2 10 10-5 10 5-10 5-10-5Z"/>
+            <path d="M6 12v5c4 3 8 3 12 0v-5"/>
+            <path d="M22 10v6"/>
+        </svg>
+
+        <div class="counter-info">
+            <strong id="num">0</strong>
+            <span id="label">étudiants</span>
+        </div>
+    </div>
+
+    <img class="uae-logo" src="photos/uae.png" alt="UAE" width="90" height="90">
+
+</div>
+  </div>
+</header>
+
+<div class="bar">
+  <label class="search">
+    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+    <input id="search" type="search" placeholder="Rechercher un nom ou un prénom" aria-label="Rechercher un étudiant" autocomplete="off">
+  </label>
+  <div class="seg" role="group" aria-label="Trier par">
+    <button id="byNom" aria-pressed="true">Nom</button>
+    <button id="byPrenom" aria-pressed="false">Prénom</button>
+  </div>
+</div>
+
+<main>
+  <section id="grid" class="grid" aria-live="polite"></section>
+  <p id="empty" class="empty" hidden>Aucun étudiant ne correspond à cette recherche.</p>
+</main>
+
+<dialog id="modal">
+  <button id="close" class="close" aria-label="Fermer">×</button>
+  <img id="modalImg" alt="">
+  <div id="modalInitials" class="m-initials" hidden></div>
+  <p id="modalName"></p>
+</dialog>
+
+<script src="students.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

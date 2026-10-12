@@ -1,0 +1,7 @@
+AJOUTER / SUPPRIMER UN ETUDIANT
+- Ouvre students.js : une ligne = un étudiant ["NOM", "Prénom", "photo"].
+- Ajoute ou efface une ligne. Le compteur du site se met à jour tout seul.
+- Mets la photo dans photos/ (nom sans extension dans students.js : 01 pour 01.jpg).
+
+TEST EN LOCAL : double-clic sur index.html.
+DEPLOIEMENT : GitHub puis vercel.com > Add New Project > Import > Deploy.
